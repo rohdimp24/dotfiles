@@ -1,0 +1,46 @@
+
+# added by Anaconda3 4.2.0 installer
+export JAVA_HOME=$(/usr/libexec/java_home)
+
+export PATH="/Users/305015992/anaconda/bin:$PATH"
+
+#for maven
+export PATH=~/software/apache-maven-3.3.9/bin:$PATH
+
+#for spark
+
+export PATH=$PATH:~/software/spark-2.0.2-bin-hadoop2.7/bin
+
+##adding the aliases
+alias sublime="/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl"
+
+
+#for cf
+#export HTTP_PROXY="http://proxy-src.research.ge.com:8080"
+export HTTP_PROXY="http://cis-india-pitc-bangalorez.proxy.corporate.ge.com:80"
+export HTTPS_PROXYS="$HTTP_PROXY"
+export http_proxy="$HTTP_PROXY"
+export https_proxy="$HTTP_PROXY"
+export no_proxy="*.ice.ge.com, ice.ge.com, localhost, 3.204.60.132, openge.com,  github.build.ge.com, .ge.com, .sw.ge.com, *.maven.org, *.xip.io"
+
+
+############
+#for github command prompt beautification as per udacity course on git 
+# Enable tab completion
+source ~/git-completion.bash
+
+# colors!
+green="\[\033[0;32m\]"
+blue="\[\033[0;34m\]"
+purple="\[\033[0;35m\]"
+reset="\[\033[0m\]"
+
+# Change command prompt
+source ~/git-prompt.sh
+export GIT_PS1_SHOWDIRTYSTATE=1
+# '\u' adds the name of the current user to the prompt
+# '\$(__git_ps1)' adds git-related stuff
+# '\W' adds the name of the current directory
+export PS1="$purple\u$green\$(__git_ps1)$blue \W $ $reset"
+
+############
